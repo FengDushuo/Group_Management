@@ -8,7 +8,7 @@
 ##### 后台管理部分
 后台管理部分的主要功能流程如下：用户选择注册及登录进入后台管理平台，系统展示大部分功能，其中关键的功能是素材管理，文件下载和检测操作。    
 在系统的各个功能模块，用户可以根据需要自行更改所需的素材，或是查看并下载可利用PC端数据可视化子系统操作的相应文件。具体的功能流程如图。  
-![功能流程图](https://github.com/FengDushuo/Group_Management/tree/main/media/1.png)  
+![功能流程图](https://github.com/FengDushuo/Group_Management/tree/main/media/1.png)    
 后台管理部分的功能模块如图。  
 ![功能模块图](https://github.com/FengDushuo/Group_Management/tree/main/media/2.png)  
 ##### Tcpdump抓取数据包  
