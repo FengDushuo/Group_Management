@@ -8,19 +8,19 @@
 ##### 后台管理部分
 后台管理部分的主要功能流程如下：用户选择注册及登录进入后台管理平台，系统展示大部分功能，其中关键的功能是素材管理，文件下载和检测操作。    
 在系统的各个功能模块，用户可以根据需要自行更改所需的素材，或是查看并下载可利用PC端数据可视化子系统操作的相应文件。具体的功能流程如图。  
-![功能流程图](https://github.com/FengDushuo/Group_Management/tree/main/media/1.png)
+![功能流程图](https://github.com/FengDushuo/Group_Management/tree/main/media/1.png)  
 后台管理部分的功能模块如图。  
-![功能模块图](https://github.com/FengDushuo/Group_Management/tree/main/media/2.png)
+![功能模块图](https://github.com/FengDushuo/Group_Management/tree/main/media/2.png)  
 ##### Tcpdump抓取数据包  
 对于Tcpdump抓取数据包的应用，有两种模式，分别是自动抓取和被动抓取模式。以下进行介绍：  
 自动抓取模式。自动抓取模式主要是为了辅助系统的文件下载功能，生成pcap文件与经过CICFlowMeter处理所得到的csv文件以提供真实的实验数据并通过网络流量数据可视化平台进行数据可视化操作。  
 被动抓取模式。被动抓取模式主要用于在实施网络攻击模拟时进行网络流量数据抓取，以实现对一段时间内的数据进行可视化。在CIC-IDS-2017数据集特征分析的基础上，可以根据具体攻击模式进行相应特征的数据可视化，更直观的观测数据特征的趋势和变化。  
 Tcpdump嵌入功能的实现关系到后台管理系统中文件下载系统的实现。目前系统中主要利用Tcpdump实现数据包的自动捕获并将数据包保存到pcap文件中，再利用CICFlowMeter实现csv文件的获取。功能流程：在服务器端运行Shell脚本以运行Tcpdump自动捕获程序，可以自动捕捉数据包，并保存到指定位置以供系统调用，在实验中可停止捕获。Tcpdump嵌入相应功能流程和功能模块如图所示。    
-![Tcpdump功能流程功能模块](https://github.com/FengDushuo/Group_Management/tree/main/media/3.png)  
+![Tcpdump功能流程功能模块](https://github.com/FengDushuo/Group_Management/tree/main/media/3.png)   
 ##### Slowhttptest模拟网络攻击
 利用Slowhttptest模拟网络攻击主要是为了结合对数据集特征的研究，在了解研究各个网络攻击的最佳特征后，更真实地模拟网络攻击操作，获取真实的网络流量数据，为接下来的网络流量数据可视化技术研究提供便利。  
 Slowhttptest功能流程：在后台管理系统中选择检测操作；选择合适的网络攻击类型，触发后台的shell命令，对服务器的另一个端口进行网络攻击，结果将直接反馈在前端页面中。如图所示。   
-![Slowhttptest功能流程](https://github.com/FengDushuo/Group_Management/tree/main/media/4.png)
+![Slowhttptest功能流程](https://github.com/FengDushuo/Group_Management/tree/main/media/4.png)  
 
 #### 核心框架和代码解释
 后台管理部分的总体架构模式如图所示。  
@@ -104,12 +104,12 @@ export {
 ```
 
 ### 1.项目截图
-![系统首页](https://github.com/FengDushuo/Group_Management/tree/main/media/6.png)  
-![用户管理](https://github.com/FengDushuo/Group_Management/tree/main/media/7.png)  
-![客户管理](https://github.com/FengDushuo/Group_Management/tree/main/media/8.png)  
-![素材管理](https://github.com/FengDushuo/Group_Management/tree/main/media/9.png)  
-![文件下载](https://github.com/FengDushuo/Group_Management/tree/main/media/10.png)  
-![文件下载](https://github.com/FengDushuo/Group_Management/tree/main/media/11.png)  
+![系统首页](https://github.com/FengDushuo/Group_Management/tree/main/media/6.png)    
+![用户管理](https://github.com/FengDushuo/Group_Management/tree/main/media/7.png)    
+![客户管理](https://github.com/FengDushuo/Group_Management/tree/main/media/8.png)    
+![素材管理](https://github.com/FengDushuo/Group_Management/tree/main/media/9.png)    
+![文件下载](https://github.com/FengDushuo/Group_Management/tree/main/media/10.png)    
+![文件下载](https://github.com/FengDushuo/Group_Management/tree/main/media/11.png)   
 其余还有多种功能，用户可以使用和进行定制化操作。
 
 
